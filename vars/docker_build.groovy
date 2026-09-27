@@ -1,4 +1,4 @@
 def call(String imagename, String imagetag, String username)
 {
-  sh "dokcer build -t ${username}/${imagename}:${imagetag} ."
+  sh "docker build -t ${username}/${imagename}:${imagetag} ."
 }
